@@ -44,6 +44,6 @@ def main():
             
         #Print Subsequence
         print(seq[int(coord_list[1])-1:int(coord_list[2])-1])
-        
+        print()
 if __name__ == '__main__':
     main()
