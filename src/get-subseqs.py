@@ -44,6 +44,9 @@ def main():
             
         #Print Subsequence
         print(seq[int(coord_list[1])-1:int(coord_list[2])-1])
-        print()
+    print()
+    args.fasta.close()
+    args.coords.close()   
+
 if __name__ == '__main__':
     main()

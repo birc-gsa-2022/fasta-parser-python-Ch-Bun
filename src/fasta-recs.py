@@ -28,5 +28,7 @@ def main():
     #Print last line
     print(Printer)
     print()
+    args.fasta.close()
+    args.coords.close() 
 if __name__ == '__main__':
     main()
