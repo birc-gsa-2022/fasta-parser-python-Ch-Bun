@@ -27,5 +27,6 @@ def main():
                 Printer = "".join((Printer, line.strip()))
     #Print last line
     print(Printer)
+    print()
 if __name__ == '__main__':
     main()
