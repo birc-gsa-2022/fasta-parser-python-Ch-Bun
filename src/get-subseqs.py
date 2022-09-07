@@ -18,8 +18,8 @@ def main():
     )
     args = argparser.parse_args()
 
-    print(f"Now I need to process the records in {args.fasta}")
-    print(f"and the coordinates in {args.coords}")
+    #print(f"Now I need to process the records in {args.fasta}")
+    #print(f"and the coordinates in {args.coords}")
 
 
     for line in args.coords:
@@ -44,9 +44,6 @@ def main():
             
         #Print Subsequence
         print(seq[int(coord_list[1])-1:int(coord_list[2])-1])
-    print()
-    args.fasta.close()
-    args.coords.close()   
 
 if __name__ == '__main__':
     main()

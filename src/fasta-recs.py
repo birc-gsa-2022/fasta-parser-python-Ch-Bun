@@ -11,7 +11,7 @@ def main():
     )
     args = argparser.parse_args()
 
-    print(f"Now I need to process the records in {args.fasta}")
+    #print(f"Now I need to process the records in {args.fasta}")
     Printer = ''
     Seq_to_Print = False 
     for line in args.fasta:
@@ -27,8 +27,6 @@ def main():
                 Printer = "".join((Printer, line.strip()))
     #Print last line
     print(Printer)
-    print()
-    args.fasta.close()
-    args.coords.close() 
+ 
 if __name__ == '__main__':
     main()
