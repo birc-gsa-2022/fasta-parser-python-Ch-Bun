@@ -37,7 +37,7 @@ def main():
                 found = True 
             #Append sequence as long as header found but new Seq didn't start
             elif found == True and (line2.startswith('>') == False):
-                seq = "".join((seq, line2))
+                seq = "".join((seq, line2.strip()))
             #Break when new Seq starts
             elif found == True and (line2.startswith('>')):
                 break
